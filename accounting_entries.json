@@ -1,0 +1,46 @@
+[
+  {
+    "id": "TX-PE-PE-001-EGR-PENDIENTE",
+    "date": "2026-07-26",
+    "type": "Egreso",
+    "category": "Pendiente Cliente",
+    "amount": 39.11,
+    "description": "[PENDIENTE CLIENTE] Egreso por saldo pendiente que debe el cliente para Pedido Especial PE-001 - Cliente: Gabriel Santiago ",
+    "orderId": "PE-001",
+    "updated_at": "2026-07-26T02:27:41.956Z",
+    "deleted_at": null
+  },
+  {
+    "id": "TX-PE-PE-001-ING-LIBRAS",
+    "date": "2026-07-26",
+    "type": "Ingreso",
+    "category": "Ingreso por Libras",
+    "amount": 0,
+    "description": "[INGRESO LIBRAS] Valor o costo de las libras para Pedido Especial PE-001 (0 lbs a $5/lb) - Cliente: Gabriel Santiago ",
+    "orderId": "PE-001",
+    "updated_at": "2026-07-26T02:27:41.956Z",
+    "deleted_at": null
+  },
+  {
+    "id": "TX-PE-PE-002-EGR-PENDIENTE",
+    "date": "2026-07-26",
+    "type": "Egreso",
+    "category": "Pendiente Cliente",
+    "amount": 39.11,
+    "description": "[PENDIENTE CLIENTE] Egreso por saldo pendiente que debe el cliente para Pedido Especial PE-002 - Cliente: Gabriel Santiago ",
+    "orderId": "PE-002",
+    "updated_at": "2026-07-26T02:19:09.839Z",
+    "deleted_at": null
+  },
+  {
+    "id": "TX-PE-PE-002-ING-LIBRAS",
+    "date": "2026-07-26",
+    "type": "Ingreso",
+    "category": "Ingreso por Libras",
+    "amount": 0,
+    "description": "[INGRESO LIBRAS] Valor o costo de las libras para Pedido Especial PE-002 (0 lbs a $5/lb) - Cliente: Gabriel Santiago ",
+    "orderId": "PE-002",
+    "updated_at": "2026-07-26T02:19:09.839Z",
+    "deleted_at": null
+  }
+]

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es" class="notranslate" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title translate="no">KEINSHOP CRM & Inteligencia de Negocio</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading skeleton rendered instantly by browser before React loads -->
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #ffffff; font-family: system-ui, -apple-system, sans-serif; padding: 24px; text-align: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; max-width: 380px; width: 100%;">
+          <!-- Pulse Logo Container -->
+          <div style="position: relative; width: 96px; height: 96px; margin-bottom: 32px; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle, rgba(32,49,128,0.15) 0%, rgba(255,122,166,0.15) 100%); border-radius: 50%; filter: blur(8px); animation: pulse 2s infinite ease-in-out;"></div>
+            <div style="position: relative; width: 80px; height: 80px; background-color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 4px solid #203180; box-shadow: 0 10px 25px rgba(32,49,128,0.15);">
+              <span style="font-size: 28px; font-weight: 900; color: #203180; letter-spacing: -1.5px; font-family: sans-serif;">KS</span>
+            </div>
+          </div>
+          
+          <!-- Text -->
+          <h1 style="color: #203180; font-size: 24px; font-weight: 900; margin: 0 0 8px; letter-spacing: -0.5px;">KEINSHOP <span style="color: #FF7AA6;">CRM</span></h1>
+          <p style="color: #9CA3AF; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 24px;">Inteligencia de Negocio</p>
+          
+          <!-- Spinner & Loading Indicator -->
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
+            <div style="width: 20px; height: 20px; border: 3px solid #FF7AA6; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+            <span style="font-size: 14px; font-weight: 600; color: #203180;">Iniciando sistema...</span>
+          </div>
+          
+          <p style="color: #9CA3AF; font-size: 12px; line-height: 1.5; margin: 0;">Sincronizando catálogos, pedidos, reportes y contabilidad en tiempo real de forma segura...</p>
+        </div>
+      </div>
+      
+      <!-- Keyframes CSS -->
+      <style>
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); opacity: 0.5; }
+          50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
+    <script>
+      window.addEventListener('error', (e) => {
+        console.error("Error detectado en KEINSHOP CRM:", e.message || e);
+        const rootEl = document.getElementById('root');
+        if (rootEl && !window.__REACT_MOUNTED__) {
+          rootEl.innerHTML = `
+            <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #F9FAFB; font-family: system-ui, -apple-system, sans-serif; padding: 24px; text-align: center;">
+              <div style="background-color: white; border-radius: 24px; padding: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 480px; width: 100%; border: 1px solid #E5E7EB; position: relative;">
+                <div style="background-color: #FEE2E2; border-radius: 50%; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h2 style="color: #111827; font-size: 22px; font-weight: 800; margin-bottom: 12px; font-family: system-ui, sans-serif;">¡Oops! Algo salió mal</h2>
+                <p style="color: #4B5563; font-size: 14px; line-height: 1.5; margin-bottom: 24px;">Hemos detectado un error al cargar o sincronizar los datos de KEINSHOP CRM. No te preocupes, tus datos están seguros en el servidor.</p>
+                <div style="background-color: #F3F4F6; border-radius: 12px; padding: 12px; margin-bottom: 24px; text-align: left; max-height: 120px; overflow-y: auto;">
+                  <code style="font-family: monospace; font-size: 12px; color: #DC2626; word-break: break-all;">${e.message || "Error indefinido en la carga"}</code>
+                </div>
+                <button onclick="window.location.reload()" style="background-color: #FF7AA6; color: white; border: none; border-radius: 12px; padding: 12px 24px; font-weight: 700; cursor: pointer; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(255,122,166,0.3); width: 100%; font-size: 14px;">
+                  Refrescar Aplicación
+                </button>
+              </div>
+            </div>
+          `;
+        }
+      });
+      window.addEventListener('unhandledrejection', (e) => {
+        console.error("Promesa rechazada en KEINSHOP CRM:", e.reason);
+        const rootEl = document.getElementById('root');
+        if (rootEl && !window.__REACT_MOUNTED__) {
+          rootEl.innerHTML = `
+            <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #F9FAFB; font-family: system-ui, -apple-system, sans-serif; padding: 24px; text-align: center;">
+              <div style="background-color: white; border-radius: 24px; padding: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 480px; width: 100%; border: 1px solid #E5E7EB; position: relative;">
+                <div style="background-color: #FEE2E2; border-radius: 50%; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h2 style="color: #111827; font-size: 22px; font-weight: 800; margin-bottom: 12px; font-family: system-ui, sans-serif;">Error de Conexión / Servidor</h2>
+                <p style="color: #4B5563; font-size: 14px; line-height: 1.5; margin-bottom: 24px;">No hemos podido conectar con el servidor de KEINSHOP CRM. Puede que la base de datos se esté reiniciando. Por favor, refresca la página.</p>
+                <div style="background-color: #F3F4F6; border-radius: 12px; padding: 12px; margin-bottom: 24px; text-align: left; max-height: 120px; overflow-y: auto;">
+                  <code style="font-family: monospace; font-size: 12px; color: #DC2626; word-break: break-all;">${e.reason || "Error de red o base de datos"}</code>
+                </div>
+                <button onclick="window.location.reload()" style="background-color: #FF7AA6; color: white; border: none; border-radius: 12px; padding: 12px 24px; font-weight: 700; cursor: pointer; transition: transform 0.2s; box-shadow: 0 4px 12px rgba(255,122,166,0.3); width: 100%; font-size: 14px;">
+                  Refrescar Aplicación
+                </button>
+              </div>
+            </div>
+          `;
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

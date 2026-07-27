@@ -1,0 +1,6 @@
+{
+  "name": "KEINSHOP CRM & Inteligencia de Negocio",
+  "description": "CRM integral tipo ODOO/Kyte para KEINSHOP con control de inventario, catálogo editable, pedidos especiales Shein/Temu, clientes, contabilidad y un calendario de contenido optimizado con asesores IA predictivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

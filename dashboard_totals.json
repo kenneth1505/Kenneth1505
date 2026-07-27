@@ -1,0 +1,17 @@
+{
+  "totalincome": 0,
+  "total_income": 0,
+  "totalexpense": 0,
+  "total_expense": 0,
+  "netbalance": 0,
+  "net_balance": 0,
+  "inventorytotalunits": 68,
+  "inventoryunits": 68,
+  "inventorytotalskus": 12,
+  "inventoryskus": 12,
+  "specialordersactive_count": 0,
+  "ordersactive": 0,
+  "specialorderspending_balance": 0,
+  "orderspendingbalance": 0,
+  "updated_at": "2026-07-23T15:28:31.404Z"
+}
